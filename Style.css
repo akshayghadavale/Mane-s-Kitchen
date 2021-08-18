@@ -1,37 +1,84 @@
 *{
     margin: 0;
     padding: 0;
+    
+    
 }
 
 #kitchen{
     width: 100%;
     height: 100vh;
-    background-image: url(/kitchen\ 2.jpg);
+ 
+    background-image: url(/kitchenfrontpage.jpg);
     background-repeat: no-repeat;
+    background-position:bottom;
     background-size: cover; 
+}
+.sec1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    
+}
+.header{
+    width:100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .header h1{
  font-size: 120px;
  font-style:normal;
- position:absolute;
- left: 390px;
- top: 310px;
+ color:black;
+ 
 
  }
- .header h2{
+ .subsec1 h2{
     font-size: 30px;
     font-style:normal;
-    position:absolute;
-    left:840px;
-    top:440px;
+    position: relative;
+    top: 50px;
+    right: 10px;
+   
+
     
  }
+
+ .subsec1{
+
+     width: 40%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+ .subsec2{
+     height: 100%;
+     width: 60%;
+     position: relative;
+     left: 20px;
+ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+ }
+
  .wbutton{
-     font-size: 50px;
-     position: absolute;
-     left: 600px;
-     top: 520px;
+     font-size: 35px;
+     position: relative;
+     top: 30px;
+     left: 42px;
+     
+
+     
+     
+ }
+ .wbutton a{
+     color: antiquewhite;
  }
  #mainpage{
     
@@ -51,12 +98,24 @@
     position: absolute;
     left: 320px;
     top: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:0px 0px 30px 8px white ;
+    border:3px solid black
 }
 .chfood img{
      width: 100%;
      height: 100%;
      border-radius: 100%;
-     border: 7px solid red;
+    
+     
+     
+  transition: transform .1s; /* Animation */
+
+}
+
+.chfood img:hover {
+  transform: scale(1.5);
 }    
 .pbfood{
     width: 200px;
@@ -64,12 +123,23 @@
     position: absolute;
     left: 640px;
     top: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:0px 0px 30px 8px white ;
+    border:3px solid black
+
 }
 .pbfood img{
     width: 100%;
      height: 100%;
      border-radius: 100%;
-     border: 7px solid red;
+     transition: transform .1s; /* Animation */
+
+}
+
+.pbfood img:hover {
+  transform: scale(1.5);
+    
 }
 .sifood{
     width: 200px;
@@ -77,12 +147,22 @@
     position: absolute;
     left: 940px;
     top: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:0px 0px 30px 8px white ;
+    border:3px solid black
 }
 .sifood img{
     width: 100%;
      height: 100%;
      border-radius: 100%;
-     border: 7px solid red;
+     transition: transform .1s; /* Animation */
+
+}
+
+.sifood img:hover {
+  transform: scale(1.5);
+    
 }
 .kfood{
     width: 200px;
@@ -90,12 +170,23 @@
     position: absolute;
     left: 320px;
     top: 370px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:0px 0px 30px 8px white ;
+    border:3px solid black
 }
 .kfood img{
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 7px solid red;
+    transition: transform .1s; /* Animation */
+
+}
+
+.kfood img:hover {
+  transform: scale(1.5);
+   
+    
 }
 .mfood{
     width: 200px;
@@ -103,12 +194,22 @@
     position: absolute;
     left: 640px;
     top: 370px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:0px 0px 30px 8px white ;
+    border:3px solid black
 }
 .mfood img{
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 7px solid red;
+    transition: transform .1s; /* Animation */
+
+}
+
+.mfood img:hover {
+  transform: scale(1.5);
+    
 }
 .other{
     width: 200px;
@@ -116,12 +217,16 @@
     position: absolute;
     left: 940px;
     top: 370px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:0px 0px 30px 8px white ;
+    border:3px solid black
 }
 .other img{
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    border: 7px solid red;
+
 }
 .foodbutton{
     font-size: 20px;
@@ -129,13 +234,18 @@
     left: 350px;
     top: 275px;
     text-decoration: black;
-    text-shadow: 1px;
+    text-shadow: 10px;
+    background-color:cadetblue;
     
 }
 a{
     text-decoration:none;
     color:rgb(36, 27, 27);
     text-decoration-line: underline;
+    width: 200px;
+    height: 200px;
+   
+    border-color:20px solid black;
    
     
 }
@@ -145,6 +255,7 @@ a{
     position: absolute;
     left: 675px;
     top: 275px;
+    background-color:cadetblue;
 }
 
 .foodbutton2{
@@ -152,31 +263,55 @@ a{
     position: absolute;
     left: 940px;
     top: 275px;
+    background-color:cadetblue;
 }
 .foodbutton3{
     font-size: 20px;
     position: absolute;
     left: 350px;
     top: 600px;
+    background-color:cadetblue;
 }
 .foodbutton4{
     font-size: 20px;
     position: absolute;
     left: 675px;
     top: 600px;
+    background-color:cadetblue;
 }
 .foodbutton5{ 
     font-size: 20px;
     position: absolute;
     left: 980px;
     top: 600px;
-    color: fuchsia;
-}
-#panjabdish{
-    width: 100%;
-    height: 100px;
-    background-image: url(/pb\ menu.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
+    background-color:cadetblue;
     
+}
+.MenuCard{
+    width: 100%;
+    height: 100vh;
+    background-color:brown;
+    display: flex;
+}
+.part1{
+    width: 30%;
+    height: 100%;
+    background-image: url(/pngegg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.part2{
+    width: 70%;
+    height: 86%;
+    background-color:#3E753B;
+    border:50px solid #6d4203;
+}
+h3{
+    position: relative;
+    left: 20px;
+    top: 60px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color:azure
 }
